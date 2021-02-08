@@ -87,14 +87,13 @@ fi
 commit=$(git --no-pager log -n 1 --format="%H")
 export BOX_VERSION_DESCRIPTION="
 ## Description
-This base box is based on a clean CentOS 7 minimal install. I try to keep the builds up to date with the latest version of this box.
+This base box is based on a clean CentOS 7 minimal install.
 
 The box defaults to 1 CPU and 1GB of RAM, it is not advised to limit this.
 
 ---
 
 ## Versions included in this release
-The box is based on a clean CentOS 7 minimal install
 * Latest OS updates installed at build time
 * ansible ${ANSIBLE_VERSION}
 * cryptography ${CRYPTOGRAPHY_VERSION}
