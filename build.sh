@@ -3,7 +3,7 @@
 set -e
 
 # Set version info
-export BOX_VERSION_BASE=0.1.0
+export BOX_VERSION_BASE=1.0.0
 export CENTOS_BASE_ISO="CentOS-7-x86_64-Minimal-2009.iso"
 export CENTOS_BASE_ISO_SHA256="07b94e6b1a0b0260b94c83d6bb76b26bf7a310dc78d7a9c7432809fb9bc6194a"
 
