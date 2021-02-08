@@ -14,7 +14,7 @@ export ANSIBLE_VERSION=2.10.5
 export CRYPTOGRAPHY_VERSION=3.3.2
 
 # Set versions of supported tools, if they don't match, a warning will be shown on screen
-export VIRTUALBOX_VERSION="6.1.16"
+export VIRTUALBOX_VERSION="6.1.16r140961"
 export PACKER_VERSION="1.6.5"
 export VAGRANT_VERSION="2.2.14"
 
