@@ -94,7 +94,7 @@ The box defaults to 1 CPU and 1GB of RAM, it is not advised to limit this.
 ---
 
 ## Versions included in this release
-Based on box [${BOX_BASE}](https://app.vagrantup.com/centos/boxes/7) version ${BOX_BASE_VERSION}
+The box is based on a clean CentOS 7 minimal install
 * Latest OS updates installed at build time
 * ansible ${ANSIBLE_VERSION}
 * cryptography ${CRYPTOGRAPHY_VERSION}
