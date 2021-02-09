@@ -67,3 +67,8 @@
       file:
         path: /vagrant
         state: directory
+
+    - name: create /mnt directory
+      file:
+        path: /mnt
+        state: directory
