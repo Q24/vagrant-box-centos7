@@ -25,7 +25,7 @@
 
     - name: install prerequisites
       yum:
-        name: [ vim, socat, device-mapper-persistent-data, lvm2, telnet, tcpdump, conntrack-tools, bind-utils, kernel-devel, elfutils-libelf-devel, gcc, cpp, glibc-devel, glibc-headers, kernel-headers, libmpc, mpfr, zlib-devel, bzip2 ]
+        name: [ vim, socat, device-mapper-persistent-data, lvm2, telnet, tcpdump, conntrack-tools, bind-utils, kernel-devel, elfutils-libelf-devel, gcc, cpp, glibc-devel, glibc-headers, kernel-headers, libmpc, mpfr, zlib-devel, bzip2, bash-completion ]
 
     - name: mount guest additions ISO read-only
       mount:
