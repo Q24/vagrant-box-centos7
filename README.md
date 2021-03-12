@@ -17,7 +17,7 @@ To be able to build the box yourself, you'll need at least following tools insta
 The build wil be uploaded to Vagrant Cloud, so you'll need an account and corresponding token there. On top of that, the box has to be pre-created for the upload to succeed.
 
 ## Usage
-1. Make sure you have a Vagrant Cloud account with an authentication token. You need to have "admin" access to the Vagrant Cloud box, or you need to be the owner of the box for the upload to work automatically. This token can be created via [`Account settings -> Security`](https://app.vagrantup.com/settings/security). You can enter the username and token when requested by the `build.sh` script (but you will need to do this every time when creating a new build), or you can create a file `build.env` in the root of this repository where you set the variables as follows:
+1. Make sure you have a Vagrant Cloud account with an authentication token. You need to have "admin" access to the [Vagrant Cloud box](https://app.vagrantup.com/ilionx/boxes/centos7), or you need to be the owner of the box for the upload to work automatically. This token can be created via [`Account settings -> Security`](https://app.vagrantup.com/settings/security). You can enter the username and token when requested by the `build.sh` script (but you will need to do this every time when creating a new build), or you can create a file `build.env` in the root of this repository where you set the variables as follows:
 
 ```
 DEFAULT_VAGRANT_CLOUD_USER="your.username"

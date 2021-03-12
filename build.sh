@@ -3,19 +3,19 @@
 set -e
 
 # Set version info
-export BOX_VERSION_BASE=1.0.0
+export BOX_VERSION_BASE=1.0.1
 export CENTOS_BASE_ISO="CentOS-7-x86_64-Minimal-2009.iso"
 export CENTOS_BASE_ISO_SHA256="07b94e6b1a0b0260b94c83d6bb76b26bf7a310dc78d7a9c7432809fb9bc6194a"
 
 # Set versions requested of main components (These will be used in Packer and passed to Ansible downstream)
-export ANSIBLE_VERSION=2.10.5
+export ANSIBLE_VERSION=2.10.7
 # There is a bug in cryptography requirements version 3.4.0 / 3.4.1 that blocks ansible install. See https://github.com/pypa/setuptools/issues/2353
 # And it looks like since version 3.4.0 python 2 support has been dropped, which we still need because of ansible-yum integration.
 export CRYPTOGRAPHY_VERSION=3.3.2
 
 # Set versions of supported tools, if they don't match, a warning will be shown on screen
-export VIRTUALBOX_VERSION="6.1.16r140961"
-export PACKER_VERSION="1.6.5"
+export VIRTUALBOX_VERSION="6.1.18r142142"
+export PACKER_VERSION="1.6.6"
 export VAGRANT_VERSION="2.2.14"
 
 # Set the Vagrant cloud user and box name (make sure you have admin permissions to, or are the owner of this repository)
