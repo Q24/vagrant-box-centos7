@@ -6,6 +6,8 @@
     "box_base_version": "{{ env `BOX_BASE_VERSION` }}",
     "ansible_version": "{{ env `ANSIBLE_VERSION` }}",
     "cryptography_version": "{{ env `CRYPTOGRAPHY_VERSION` }}",
+    "jinja2_version": "{{ env `JINJA2_VERSION` }}",
+    "markupsafe_version": "{{ env `MARKUPSAFE_VERSION` }}",
     "vagrant_cloud_user": "{{ env `VAGRANT_CLOUD_USER` }}",
     "vagrant_cloud_box_user": "{{ env `VAGRANT_CLOUD_BOX_USER` }}",
     "vagrant_cloud_box_name": "{{ env `VAGRANT_CLOUD_BOX_NAME` }}",
@@ -62,7 +64,7 @@
       "inline": [
         "sudo yum install -y epel-release",
         "sudo yum install -y python-pip",
-        "sudo pip install cryptography=={{ user `cryptography_version` }} ansible=={{ user `ansible_version` }}"
+        "sudo pip install cryptography=={{ user `cryptography_version` }} MarkupSafe=={{ user `markupsafe_version` }} Jinja2=={{ user `jinja2_version` }} ansible=={{ user `ansible_version` }}"
       ]
     },
     {

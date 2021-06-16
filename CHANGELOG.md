@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.0.2-20210616
+* Updated Ansible to 2.10.7
+* Updated build dependencies to latest versions
+* VirtualBox Guest editions included in this release: 6.1.22
+
 ### 1.0.1-20210312
 * Updated Ansible to 2.10.7
 * Updated build dependencies to latest versions
