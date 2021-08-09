@@ -3,22 +3,22 @@
 set -e
 
 # Set version info
-export BOX_VERSION_BASE=1.0.2
+export BOX_VERSION_BASE=1.0.3
 export CENTOS_BASE_ISO="CentOS-7-x86_64-Minimal-2009.iso"
 export CENTOS_BASE_ISO_SHA256="07b94e6b1a0b0260b94c83d6bb76b26bf7a310dc78d7a9c7432809fb9bc6194a"
 
 # Set versions requested of main components (These will be used in Packer and passed to Ansible downstream)
 export ANSIBLE_VERSION=2.10.7
-# There is a bug in cryptography requirements version 3.4.0 / 3.4.1 that blocks ansible install. See https://github.com/pypa/setuptools/issues/2353
-# And it looks like since version 3.4.0 python 2 support has been dropped, which we still need because of ansible-yum integration.
+# The following Ansible dependencies stopped working with CentOS 7 in their latest version, so we lock them to a specific version
 export CRYPTOGRAPHY_VERSION=3.3.2
-# The same for Jinja2 and its dependencies, we need to install a specific version that matches with the Ansible version we're using
 export JINJA2_VERSION=2.11.3
 export MARKUPSAFE_VERSION=1.1.1
+export BCRYPT_VERSION=3.1.7
+export PACKAGING_VERSION=20.9
 
 # Set versions of supported tools, if they don't match, a warning will be shown on screen
-export VIRTUALBOX_VERSION="6.1.22r144080"
-export PACKER_VERSION="1.7.2"
+export VIRTUALBOX_VERSION="6.1.26r145957"
+export PACKER_VERSION="1.7.4"
 export VAGRANT_VERSION="2.2.16"
 
 # Set the Vagrant cloud user and box name (make sure you have admin permissions to, or are the owner of this repository)
@@ -102,6 +102,7 @@ The box defaults to 1 CPU and 1GB of RAM, it is not advised to limit this.
 * cryptography ${CRYPTOGRAPHY_VERSION}
 * MarkupSafe ${MARKUPSAFE_VERSION}
 * Jinja2 ${JINJA2_VERSION}
+* bcrypt ${BCRYPT_VERSION}
 
 ---
 
